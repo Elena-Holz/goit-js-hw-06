@@ -19,7 +19,5 @@ const elementsImg = images.map(option => {
   return `<li><img src = "${option.url}" alt = "${option.alt}" class=gallery__img/></li>`;
 });
 
-elementsImg.forEach(element => {
-  ulEl.insertAdjacentHTML("beforeend", element);
-});
+  ulEl.insertAdjacentHTML("beforeend", elementsImg.join());
 
